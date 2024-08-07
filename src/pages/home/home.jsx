@@ -46,12 +46,20 @@ export const Home = () => {
               <Link to={`/user/${item.id}`}>
                 <h1>{item.title}</h1>
               </Link>
-              <button
-                onClick={() => navigate(`/change-todo/${item.id}`)}
-                style={{ cursor: "pointer" }}
-              >
-                edit{" "}
-              </button>
+              <div>
+                <button
+                  onClick={() => navigate(`/change-todo/${item.id}`)}
+                  style={{ cursor: "pointer" }}
+                >
+                  delete{" "}
+                </button>
+                <button
+                  onClick={() => navigate(`/change-todo/${item.id}`)}
+                  style={{ cursor: "pointer" }}
+                >
+                  edit{" "}
+                </button>
+              </div>
             </div>
           ))}
         </div>
